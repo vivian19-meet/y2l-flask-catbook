@@ -13,7 +13,9 @@ def catbook_home():
 def vote_catid_route(id):
     return render_template('cat.html', n = id)
 
-
+@app.route('/new')
+def add_new(id):
+    return render_template('new.html')
 
 
 
